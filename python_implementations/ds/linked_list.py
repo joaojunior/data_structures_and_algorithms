@@ -23,11 +23,11 @@ class LinkedListIterator:
 
 class LinkedList:
     def __init__(self):
-        self.__size = 0
+        self._size = 0
         self.head = None
 
     def is_empty(self) -> bool:
-        return self.__size == 0
+        return self._size == 0
 
     def insert(self, item: Any) -> None:
         new_node = Node(item)
@@ -37,7 +37,7 @@ class LinkedList:
         else:
             new_node.next = self.head
             self.head = new_node
-        self.__size += 1
+        self._size += 1
 
     def delete(self, item: Any) -> Any:
         previous = None
@@ -47,7 +47,7 @@ class LinkedList:
             current = current.next
 
         if current is not None and current.item == item:
-            self.__size -= 1
+            self._size -= 1
             if current == self.head:
                 self.head = self.head.next
             else:

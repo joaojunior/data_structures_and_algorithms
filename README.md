@@ -1,6 +1,7 @@
 ![Test Coverage](https://codecov.io/gh/joaojunior/data_structures_and_algorithms/branch/master/graph/badge.svg)
 
-# Linked List
+# 1. Data Structure
+## 1.1 Linked List
 
 For the complexity, `n` is the number of items in the LinkedList.
 1. Time complexity:
@@ -13,7 +14,7 @@ For the complexity, `n` is the number of items in the LinkedList.
 
 2. Space Complexity: `O(n)`
 
-# Stack
+## 1.2 Stack
 
 For the complexity, `n` is the number of items in the Stack. Also, this implementation use the LinkedList to store items.
 1. Time complexity:
@@ -26,7 +27,7 @@ For the complexity, `n` is the number of items in the Stack. Also, this implemen
 
 2. Space Complexity: `O(n)`
 
-# Queue
+## 1.3 Queue
 
 For the complexity, `n` is the number of items in the Queue. Also, this implementation use the LinkedList to store items. This LinkedList always insert an element in the end of the list. To do this operation in `O(1)`, the list keep a pointer to the last element of the list.
 1. Time complexity:
@@ -38,3 +39,14 @@ For the complexity, `n` is the number of items in the Queue. Also, this implemen
         - Dequeue: `O(1)`, the item to delete is the first element of the LinkedList.
 
 2. Space Complexity: `O(n)`
+
+
+# 2. Algorithms
+## Sorting 2.1
+Here, `n` is the number of items to be sorted.
+
+### 2.1.1 SelectSort
+- Time complexity:
+    - Best case and Worst case:
+        - sort: `O(n^2)`, we select an `i th` item and compare it with all `j th` items, where `i < j < n`
+- Space Complexity: `O(n)`

@@ -48,5 +48,13 @@ Here, `n` is the number of items to be sorted.
 ### 2.1.1 SelectSort
 - Time complexity:
     - Best case and Worst case:
-        - sort: `O(n^2)`, we select an `i th` item and compare it with all `j th` items, where `i < j < n`
+        - `O(n^2)`, we select an `i th` item and compare it with all `j th` items, where `i < j < n`
+- Space Complexity: `O(n)`
+
+### 2.1.2 InsertSort
+- Time complexity:
+    - Best case:
+        - `O(n)`, The array is already sorted in an ascending way and it is necessary doing only one comparison in the inner loop for each element of the array.
+    - Worst case:
+        - `O(n^2)`, The array is sorted in an descending way and it is necessary doing `i` comparison and changes in the inner loop for each element of the array.
 - Space Complexity: `O(n)`

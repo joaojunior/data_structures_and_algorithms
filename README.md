@@ -1,4 +1,4 @@
-![Test Coverage](https://codecov.io/gh/joaojunior/data_structures_and_algorithms/branch/master/graph/badge.svg)
+[![codecov](https://codecov.io/gh/joaojunior/data_structures_and_algorithms/branch/main/graph/badge.svg?token=8G2K2F71JB)](https://codecov.io/gh/joaojunior/data_structures_and_algorithms)
 
 # 1. Data Structure
 ## 1.1 Linked List

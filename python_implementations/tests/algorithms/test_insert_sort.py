@@ -1,3 +1,5 @@
+import random
+
 import pytest
 
 from algorithms.sorting.insert_sort import InsertSort
@@ -24,7 +26,7 @@ def test_array_sorted_desc(insert_sort):
 
 def test_array_sorted_random(insert_sort):
     items = [0, 4, 2, 3, 1]
+    random.shuffle(items)
 
-    assert list(range(5)) != items
     insert_sort.sort(items)
     assert list(range(5)) == items

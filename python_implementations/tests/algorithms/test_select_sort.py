@@ -1,3 +1,5 @@
+import random
+
 import pytest
 
 from algorithms.sorting.select_sort import SelectSort
@@ -24,7 +26,7 @@ def test_array_sorted_desc(select_sort):
 
 def test_array_sorted_random(select_sort):
     items = [0, 4, 2, 3, 1]
+    random.shuffle(items)
 
-    assert list(range(5)) != items
     select_sort.sort(items)
     assert list(range(5)) == items

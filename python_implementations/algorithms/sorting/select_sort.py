@@ -7,6 +7,6 @@ class SelectSort():
         for i in range(size):
             index_min = i
             for j in range(i + 1, size):
-                if items[j] < items[i]:
+                if items[j] < items[index_min]:
                     index_min = j
             items[i], items[index_min] = items[index_min], items[i]

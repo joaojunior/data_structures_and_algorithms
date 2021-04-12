@@ -66,7 +66,7 @@ Here, `n` is the number of items to be sorted. Also, the videos below represent 
         ![Insert sort in an array desc sorted](https://user-images.githubusercontent.com/1184288/111557948-1e507200-8764-11eb-8118-073276d541aa.gif)
 - Space Complexity: `O(n)`
 
-### 2.1.2 InsertSort
+### 2.1.3 ShellSort
 - Time complexity:
     - Best case:
         - `O(n*lgn)`, The array is already sorted in an ascending way and it is necessary doing only one comparison in the inner loop for each element of the array.

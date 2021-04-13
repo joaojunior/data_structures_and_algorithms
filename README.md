@@ -47,11 +47,23 @@ For the complexity, `n` is the number of items in the Heap.
 1. Time complexity:
     - Best case:
         - max_heapify: `O(1)`, here is when we need to look only in a level below `i`.
-        - build_max_heap: `O(n)`, for each element from position `0` to `n // 2 - 1`, we need to call `max_heapify`.
+        - build_max_heap: `O(n)`, for each element from position `n // 2 - 1` to `0`, we need to call `max_heapify`.
     - Worst case:
         - max_heapify: `O(lgn)`, we need to look all levels from the root until leaves.
-        - build_max_heap: `O(n)`, for each element from position `0` to `n // 2 - 1`, we need to call `max_heapify`.
+        - build_max_heap: `O(n)`, for each element from position `n // 2 - 1` to `0`, we need to call `max_heapify`.
 2. Space Complexity: `O(n)`, `build_max_heap` create a max heap in place.
+
+## 1.5 MinHeap
+
+For the complexity, `n` is the number of items in the Heap.
+1. Time complexity:
+    - Best case:
+        - min_heapify: `O(1)`, here is when we need to look only in a level below `i`.
+        - build_min_heap: `O(n)`, for each element from position `n // 2 - 1` to `0`, we need to call `min_heapify`.
+    - Worst case:
+        - min_heapify: `O(lgn)`, we need to look all levels from the root until leaves.
+        - build_min_heap: `O(n)`, for each element from position `n // 2 - 1` to `0`, we need to call `min_heapify`.
+2. Space Complexity: `O(n)`, `build_min_heap` create a min heap in place.
 
 
 # 2. Algorithms

@@ -41,6 +41,19 @@ For the complexity, `n` is the number of items in the Queue. Also, this implemen
 2. Space Complexity: `O(n)`
 
 
+## 1.4 MaxHeap
+
+For the complexity, `n` is the number of items in the Heap.
+1. Time complexity:
+    - Best case:
+        - max_heapify: `O(1)`, here is when we need to look only in a level below `i`.
+        - build_max_heap: `O(n)`, for each element from position `0` to `n // 2 - 1`, we need to call `max_heapify`.
+    - Worst case:
+        - max_heapify: `O(lgn)`, we need to look all levels from the root until leaves.
+        - build_max_heap: `O(n)`, for each element from position `0` to `n // 2 - 1`, we need to call `max_heapify`.
+2. Space Complexity: `O(n)`, `build_max_heap` create a max heap in place.
+
+
 # 2. Algorithms
 ## Sorting 2.1
 Here, `n` is the number of items to be sorted. Also, the videos below represent each algorithm in execution which red bars represent comparations.

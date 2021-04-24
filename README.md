@@ -38,17 +38,6 @@ For the complexity, `n` is the number of items in the Queue. Also, this implemen
         - Enqueue: `O(1)`, we always insert a new item after the last element of the LinkedList that has a pointer to it last element.
         - Dequeue: `O(1)`, the item to delete is the first element of the LinkedList.
 
-## 1.4 BinarySearchTree
-
-For the complexity, `n` is the number of items in the Binary search tree and `h` is the tree's height.
-1. Time complexity: In the worst case, `h = n`, the binary search tree is like a linked list.
-    - search: `O(h)`, we do a binary search to find an element.
-    - insert: `O(h)`, Either we need to find the element in the tree or we need to find the correct place for the new element. Both start in the tree's root and do a binary search.
-    - delete: `O(h)`, We need to find the element in the tree and delete it. To find the element, we use the `search` method.
-
-2. Space Complexity: `O(n)`
-
-
 ## 1.4 MaxHeap
 
 For the complexity, `n` is the number of items in the Heap.
@@ -72,6 +61,16 @@ For the complexity, `n` is the number of items in the Heap.
         - min_heapify: `O(lgn)`, we need to look all levels from the root until leaves.
         - build_min_heap: `O(n)`, for each element from position `n // 2 - 1` to `0`, we need to call `min_heapify`.
 2. Space Complexity: `O(n)`, `build_min_heap` create a min heap in place.
+
+## 1.6 BinarySearchTree
+
+For the complexity, `n` is the number of items in the Binary search tree and `h` is the tree's height.
+1. Time complexity: In the worst case, `h = n`, the binary search tree is like a linked list.
+    - search: `O(h)`, we do a binary search to find an element.
+    - insert: `O(h)`, Either we need to find the element in the tree or we need to find the correct place for the new element. Both start in the tree's root and do a binary search.
+    - delete: `O(h)`, We need to find the element in the tree and delete it. To find the element, we use the `search` method.
+
+2. Space Complexity: `O(n)`
 
 
 # 2. Algorithms

@@ -81,7 +81,7 @@ Here, `n` is the number of items to be sorted. Also, the videos below represent 
 - Time complexity:
     - Best case and Worst case:
         - `O(n^2)`, we select an `i th` item and compare it with all `j th` items, where `i < j < n`
-        
+
 ![Select sort in an array asc sorted](https://user-images.githubusercontent.com/1184288/111559169-6cff0b80-8766-11eb-8dbf-c19c0f93a556.gif)
 ![Select sort in an array desc sorted](https://user-images.githubusercontent.com/1184288/111559392-ccf5b200-8766-11eb-89eb-7f9356614f55.gif)
 
@@ -94,7 +94,7 @@ Here, `n` is the number of items to be sorted. Also, the videos below represent 
         - `O(n)`, The array is already sorted in an ascending way and it is necessary doing only one comparison in the inner loop for each element of the array.
         ![Insert sort in an array asc sorted](https://user-images.githubusercontent.com/1184288/111558349-fb728d80-8764-11eb-94a8-7debe0d7f1f9.gif)
     - Worst case:
-        - `O(n^2)`, The array is sorted in an descending way and it is necessary doing `i` comparison and changes in the inner loop for each element of the array.  
+        - `O(n^2)`, The array is sorted in an descending way and it is necessary doing `i` comparison and changes in the inner loop for each element of the array.
         ![Insert sort in an array desc sorted](https://user-images.githubusercontent.com/1184288/111557948-1e507200-8764-11eb-8118-073276d541aa.gif)
 - Space Complexity: `O(n)`
 
@@ -107,3 +107,18 @@ Here, `n` is the number of items to be sorted. Also, the videos below represent 
         - `O(n^1.5)`, The array is sorted in an descending way.
         ![out](https://user-images.githubusercontent.com/1184288/112078292-8207e000-8b54-11eb-8c25-779c84541feb.gif)
 - Space Complexity: `O(n)`
+
+## 2.2 Tree traversal
+Here, `n` is the number of nodes and `h` is the height of the Tree.
+
+### 2.2.1 In-Order
+- Time complexity: `O(n)`, we always need to visit each node of the tree.
+- Space complexity: `O(h)`, we are using a recursive algorithm and `h` is the height of the tree recursive call.
+
+### 2.2.2 Pre-Order
+- Time complexity: `O(n)`, we always need to visit each node of the tree.
+- Space complexity: `O(h)`, we are using a recursive algorithm and `h` is the height of the tree recursive call.
+
+### 2.2.3 Post-Order
+- Time complexity: `O(n)`, we always need to visit each node of the tree.
+- Space complexity: `O(h)`, we are using a recursive algorithm and `h` is the height of the tree recursive call.

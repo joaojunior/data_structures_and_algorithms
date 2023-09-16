@@ -1,4 +1,5 @@
 from algorithms.searching.binary_search import (binary_search,
+                                                binary_search_bigger_than,
                                                 binary_search_less_than)
 
 
@@ -36,3 +37,22 @@ class TestBinarySearchLessThan:
 
         assert flag == binary_search_less_than(item - 0.1, items)
         assert flag == binary_search_less_than(item, items)
+
+
+class TestBinarySearchBiggerThan:
+    def test_found_smallest_item_bigger_than_given_item(self):
+        items = list(range(10))
+
+        for idx in range(0, len(items) - 1):
+            item = items[idx]
+            assert idx == binary_search_bigger_than(item - 0.1, items)
+            assert idx + 1 == binary_search_bigger_than(item, items)
+            assert idx + 1 == binary_search_bigger_than(item + 0.1, items)
+
+    def test_return_flag_when_given_element_is_max_or_bigger(self):
+        items = list(range(10))
+        item = max(items)
+        flag = -1
+
+        assert flag == binary_search_bigger_than(item, items)
+        assert flag == binary_search_bigger_than(item + 0.1, items)

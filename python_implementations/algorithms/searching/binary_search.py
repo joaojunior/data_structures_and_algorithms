@@ -24,3 +24,17 @@ def binary_search_less_than(item, items):
         else:
             right = mid - 1
     return idx
+
+
+def binary_search_bigger_than(item, items):
+    left = 0
+    right = len(items) - 1
+    idx = -1
+    while left <= right:
+        mid = left + (right - left) // 2
+        if items[mid] > item:
+            idx = mid
+            right = mid - 1
+        else:
+            left += 1
+    return idx

@@ -38,3 +38,17 @@ def binary_search_bigger_than(item, items):
         else:
             left += 1
     return idx
+
+
+def binary_search_rotate_array_index_min(items):
+    if len(items) == 0:
+        return -1
+    left = 0
+    right = len(items) - 1
+    while left < right:
+        mid = left + (right - left) // 2
+        if items[mid] < items[right]:
+            right = mid
+        else:
+            left = mid + 1
+    return left

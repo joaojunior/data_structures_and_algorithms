@@ -1,6 +1,6 @@
 from algorithms.searching.binary_search import (
     binary_search, binary_search_bigger_than, binary_search_less_than,
-    binary_search_rotate_array_index_min)
+    binary_search_rotate_array, binary_search_rotate_array_index_min)
 
 
 class TestBinarySearch:
@@ -75,3 +75,13 @@ class TestBinarySearchRotateArrayIndexMin:
         items = []
         flag = -1
         assert flag == binary_search_rotate_array_index_min(items)
+
+
+class TestBinarySearchRotateArray:
+    def test_return_correct_index_of_item(self):
+        n = 10
+        for i in range(n):
+            items = list(range(n))
+            items = items[i:] + items[:i]
+            for idx, item in enumerate(items):
+                assert idx == binary_search_rotate_array(item, items)
